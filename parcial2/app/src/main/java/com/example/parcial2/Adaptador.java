@@ -50,10 +50,10 @@ public class Adaptador extends AppCompatActivity implements RecyclerViewInterfac
     @Override
     public void onItemClick(int position) {
         Intent intent = new Intent(Adaptador.this, MainActivity2.class);
-        intent.putExtra("nombre_uuario", listaUsuarios.get(position).getNombre());
+        intent.putExtra("nombre_usuario", listaUsuarios.get(position).getNombre());
         intent.putExtra("estado_usuario", listaUsuarios.get(position).getEstado());
         intent.putExtra("tipo_usuario", listaUsuarios.get(position).getTipo());
-        intent.putExtra("image_usuario", listaUsuarios.get(position).getImagen());
+        intent.putExtra("imagen_usuario", listaUsuarios.get(position).getImagen());
         startActivity(intent);
     }
 }
